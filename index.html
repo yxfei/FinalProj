@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Museums Around Me</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titleBox">Museums Around Me</div>
+    <div class="container-box">
+<!--       <button type="button" class="btn btn-default btn-lg" id="museum">
+        <span class="glyphicon" aria-hidden="true"></span>Museum
+      </button>
+      <button type="button" class="btn btn-default btn-lg" id="cafe">
+        <span class="glyphicon" aria-hidden="true"></span>Cafe
+      </button>
+      <button type="button" class="btn btn-default btn-lg" id="park">
+        <span class="glyphicon" aria-hidden="true"></span>Park
+      </button> -->
+    </div>
+    <div id="map"></div>
+
+  
+
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+<!-- this is Google Places API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnLdrjJcSRfUCNhbVz0mlCEKMTeZoZGFE&signed_in=true&libraries=places&callback=initMap" async defer></script>
+    <script src='javascript/main.js'></script>
+  </body>
+</html>

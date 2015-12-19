@@ -1,0 +1,66 @@
+/*
+    LAYOUT STYLES
+*/
+/*
+    row block
+*/
+html {
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.titleBox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    /*in side the row, we have a container that 
+    max-width of 960px and margin: 0 auto*/
+    /*min-height: 300px;*/
+    /*border: 1px solid red;*/
+}
+
+.container-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#map {
+    height: 100%;
+}
+
+/*Rsoponsive - should alwasy
+768px is the ipad's max width*/
+
+/*if max-width is less than 769px,
+it will apply the following code for mobile*/
+@media all and ( max-width: 769px ){
+    .columns {
+        display: block;
+}
+
+@media print  {
+    .nav__item {
+        color: black;
+    }
+}
+
+/*if min-width is greater than 480px,
+it will apply the following code for desktop*/
+@media all and (min-width: 480px) {
+    .nav__item {
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+    }
+}
+
+#map {
+    height: 100%;
+}
+
+}
